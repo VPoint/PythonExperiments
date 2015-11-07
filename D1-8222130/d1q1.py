@@ -1,6 +1,3 @@
-# Esther Raji
-# Student Number: 822130
-# Devoirs 1, Question 1
 
 #Initialiser les variables
 livres = float(input("Entrez le nombre de livres: "))
