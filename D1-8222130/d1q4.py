@@ -1,7 +1,3 @@
-# Esther Raji
-# Student Number: 822130
-# Devoirs 1, Question 4
-
 #Initialiser les variables des données et mettes le en cents
 total = float(input("Entrez le montant en dollars: "))*100
 

@@ -1,7 +1,3 @@
-# Esther Raji
-# Student Number: 822130
-# Devoirs 1, Question 5
-
 # Partie A
 # Initialiser le variable des données du clavier
 années = float(input("Entrez un nombre d'années-lumière: "))

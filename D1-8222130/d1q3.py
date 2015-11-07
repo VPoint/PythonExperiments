@@ -1,7 +1,3 @@
-# Esther Raji
-# Student Number: 822130
-# Devoirs 1, Question 3
-
 #Initialiser les variables
 livres = float(input("Entrez le nombre de livres: "))
 onces = float(input("Entrez le nombre d'onces: "))
