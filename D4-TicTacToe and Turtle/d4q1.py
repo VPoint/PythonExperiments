@@ -1,6 +1,3 @@
-# Devoirs 4 Question 1
-# Esther Raji (8222130) et Henri Morin (8099835)
-
 def ajoute(m):
     ''' Cette fonction accepte des matrices et retourne rien.
     Pour chaque membre du matrice, ajoutez un. Il change le matrice donnée.'''

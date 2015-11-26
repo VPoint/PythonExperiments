@@ -1,7 +1,4 @@
-﻿# Devoir 4, Question 2
-# Henri Morin (8099835) et Esther Raji (8222130)
-
-def effaceTableau (tab):
+﻿def effaceTableau (tab):
    '''
    (list) -> None
    Cette fonction prepare le tableau de jeu (la matrice) 

@@ -1,6 +1,3 @@
-# Devoir 4, Question 3 (BONUS)
-# Esther Raji (8222130) et Henri Morin (8099835)
-
 import turtle
 # La bibliotèque utilisé dans cette jeu varie car les images sont des triangles
 # et cercles au lieu des 'X' et des 'O'
