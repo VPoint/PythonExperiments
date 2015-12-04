@@ -42,7 +42,7 @@ class Blackjack:
        print("La banque a dépassé 21. Vous avez gagné.")
        return
 
-  # si 21 n'est pas depassée, compare les mains pour trouver le gagnat  
+  # si 21 n'est pas depassée, compare les mains pour trouver le gagnant  
   self.compare(banque, joueur)
 
       
@@ -78,21 +78,54 @@ class Blackjack:
     Compare la main du joueur avec la main de la banque
     et affiche de messages
     '''
-
-    # a completer
-
-    b = self.total(banque)# applelez la methode self.total pour la banque et pour le joueur
+    
+    # applelez la methode self.total pour la banque et pour le joueur
+    b = self.total(banque)
     j = self.total(joueur)
     # si le total de la banque > le total du joueur affichez 'Vous avez perdu.'
     if b > j:
+        banque.montreMain()
+        joueur.montreMain()
         print('Vous avez perdu.')
     # si le total de la banque < le total du joueur affichez 'Vous avez gagné.'   
     elif b < j:
+        banque.montreMain()
+        joueur.montreMain()
         print('Vous avez gagné.')
+    else:
     # en cas d'egalite, si le total est 21m si la banque a un blackjack
     # affichez 'Vous avez perdu.'; si le joueur a un blackjack 'Vous avez gagné.' 
     # sinon, affichez 'Egalité.'
-
+        for b_card in banque.main:
+            blackjackB = (b_card.valeur == 'A')
+            break;
+        if blackjackB:
+            blackjackB = False
+            for b_card in banque.main:
+                if ('K' == b_card.valeur or 'Q' == b_card.valeur or 'J' == b_card.valeur or '10' == b_card.valeur):
+                    blackjackB = True
+                    break;
+        for j_card in joueur.main:
+            blackjackJ = (j_card.valeur == 'A')
+            break;
+        if blackjackJ:
+            blackjackJ = False
+            for j_card in joueur.main:
+                if ('K' == j_card.valeur or 'Q' == j_card.valeur or 'J' == j_card.valeur or '10' == j_card.valeur):
+                    blackjackJ = True
+                    break;
+        if blackjackB == blackjackJ:
+            banque.montreMain()
+            joueur.montreMain()
+            print('Egalité.')
+        elif blackjackB:
+            banque.montreMain()
+            joueur.montreMain()
+            print('La Banque a un BlackJack. Vous avez perdu.')
+        elif blackjackJ:
+            banque.montreMain()
+            joueur.montreMain()
+            print('Le joueur a un BlackJack. Vous avez gagné.')
        
 class Main(object):
     '''represente une main des cartes a jouer'''
